@@ -2,6 +2,12 @@ import 'package:bloco_de_notas/src/shared/constants/app_colors.dart';
 import 'package:flutter/material.dart';
 
 class CardNote extends StatelessWidget {
+  final String title;
+  final String content;
+  final String dateCreation;
+  final Color titleColor;
+
+  CardNote(this.title, this.content, this.dateCreation, this.titleColor);
   @override
   Widget build(BuildContext context) {
     return Material(
@@ -17,7 +23,7 @@ class CardNote extends StatelessWidget {
             Container(
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(4),
-                color: AppColors.rosa,
+                color: titleColor,
               ),
               width: double.maxFinite,
               child: Column(
@@ -26,7 +32,7 @@ class CardNote extends StatelessWidget {
                   Padding(
                     padding: const EdgeInsets.all(8.0),
                     child: Text(
-                      'Não esquecer',
+                      title,
                       style: TextStyle(
                           fontFamily: 'Roboto',
                           color: Colors.white,
@@ -76,7 +82,7 @@ class CardNote extends StatelessWidget {
                   Padding(
                     padding: const EdgeInsets.all(8.0),
                     child: Text(
-                      'Lorem ipsum dolor sit amet, consecter adipiscing elit, sed incididunt ut labore et dolore aliqua.',
+                      content,
                       style: TextStyle(
                           fontFamily: 'Roboto',
                           color: Color.fromRGBO(0, 0, 0, 0.54),
@@ -95,7 +101,7 @@ class CardNote extends StatelessWidget {
                   Padding(
                     padding:
                         const EdgeInsets.only(bottom: 8, left: 8, right: 8),
-                    child: Text('Criação: 08/07/21',
+                    child: Text(dateCreation,
                         style: TextStyle(
                             fontStyle: FontStyle.italic,
                             fontFamily: 'Roboto',
