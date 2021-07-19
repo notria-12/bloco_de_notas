@@ -1,16 +1,15 @@
 # bloco_de_notas
 
-A new Flutter project.
+App Bloco de notas #LevelUp5
 
-## Getting Started
+## Splash Screen
+<img src="1.jpg" alt="splash"/>
 
-This project is a starting point for a Flutter application.
+## Add Notes Screen
+<img src="2.jpg" alt="add notes"/>
 
-A few resources to get you started if this is your first Flutter project:
+## Notes Screen
+<img src="3.jpg" alt="splash"/>
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
